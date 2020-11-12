@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sample.css">
+  <title>美女カードダス</title>
+</head>
+
+<body>
+  <header>
+  </header>
+
+  <main>
+    <div class=title>
+      <h1>美女カードダス</h1>
+      <h2>じゃんけんに勝ってレアな美女カードが当たる!?</h2>
+    </div>
+    <div class=gamespace>
+      <p>あなたの手は？</p>
+      <div class="buttonspace">
+        <div class=button>
+          <button id="gu_btn">グー</button>
+          <button id="cho_btn">チョキ</button>
+          <button id="par_btn">パー</button>
+        </div>
+      </div>
+      <div class="answer">
+        <div id="con_hand">コンピュータの出した手は？</div>
+        <div id="judgement">結果は？</div>
+        <div class="battonwrapper">
+          <div id='cardstep-win'><button onclick="location.href='index_cardwin.html'">勝ちカードを引く</button>
+          </div>
+          <div id='cardstep-even'><button onclick="location.href='index_cardeven.html'">あいこカードを引く</button>
+          </div>
+          <div id="cardstep-lose">負けたのでごほうびはありません</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>2020 dev7 UshiTaku</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+    $(function () {
+      const result = ['グー', 'チョキ', 'パー'];
+
+      //自分の手はグー
+      $('#gu_btn').on('click', function () {
+        let rand = Math.floor(Math.random() * 3);
+        // 0コンピューターグー、1コンピューターチョキ、2コンピューターパー
+        // コンピューターの手を表示
+        $('#con_hand').text('コンピュータの手:' + result[rand]);
+        if (rand == 0) {
+          $('#judgement').text('あいこ');
+        } else if (rand == 1) {
+          $('#judgement').text('勝ち');
+        } else {
+          $('#judgement').text('負け');
+        }
+      });
+
+      // 自分の手はチョキ
+      $('#cho_btn').on('click', function () {
+        let rand = Math.floor(Math.random() * 3);
+        // 0コンピューターグー、1コンピューターチョキ、2コンピューターパー
+        // コンピューターの手を表示
+        $('#con_hand').text('コンピュータの手:' + result[rand]);
+        if (rand == 0) {
+          $('#judgement').text('負け');
+        } else if (rand == 1) {
+          $('#judgement').text('あいこ');
+        } else {
+          $('#judgement').text('勝ち');
+        }
+      });
+
+      $('#par_btn').on('click', function () {
+        // 自分の手はパー
+        let rand = Math.floor(Math.random() * 3);
+        // 0コンピューターグー、1コンピューターチョキ、2コンピューターパー
+        // コンピューターの手を表示
+        $('#con_hand').text('コンピュータの手:' + result[rand]);
+        if (rand == 0) {
+          $('#judgement').text('勝ち');
+        } else if (rand == 1) {
+          $('#judgement').text('負け');
+        } else {
+          $('#judgement').text('あいこ');
+        }
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+body{
+    width: 800px;
+    text-align:center;
+font-family: ta-f1blockline,sans-serif;
+font-weight: 400;
+font-style: normal;
+    
+}
+
+.title{
+    background-color: #000000;
+    /* background-image: url(../img/header11_bk.png); */
+    /* border-bottom: 1px solid #ccc; */
+    height: 150px;
+}
+
+.title h1{
+    margin: 5px;
+    font-size:6em;
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient(0deg, #0277BD 0.1em, #4FC3F7 0.2em, #E1F5FE 0.3em, #4FC3F7 0.4em, #0277BD 0.5em); 
+    -webkit-background-clip: text;
+}
+
+.title h2{
+    font-size:2em;
+    font-weight:bold;
+    margin-top: 5px;
+	color: transparent;
+	background: linear-gradient(0deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%); 
+    -webkit-background-clip: text;
+    margin: 0%;
+}
+
+.gamespace{
+      background-image: url(../img/aside_bk.jpg);
+    height: 600px;
+    /* width: auto; */
+}
+
+footer{
+    background-color: #000000;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+    color: #ccc;
+}
+.gamespace p{
+    margin: 0%;
+    padding: 50px;
+    color: white;
+    font-size:250%;
+    text-align: center;
+}
+
+.buttonspace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display:block;
+    /* 定義 */
+    /* table-layout:fixed; */
+}
+
+button{
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 250px;
+    height: 100px;
+    cursor: pointer;
+    font-family: ta-f1blockline,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+button:hover{
+    background: greenyellow;
+    color:#fff;
+}
+
+button:active{
+    background: white;
+    color:#fff;
+}
+
+.answer{
+    margin-top: 40px;
+    font-size: 50px;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+.card-wrapper{
+    list-style: none;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card-wrapper img{
+    width: 70%;
+    height: auto;
+
+}
+
+.win1{
+    background-image: url(../img/back.png);
+}
+
+.win1:hover{
+    background-image: url(../img/勝ち1.png);
+
+}
