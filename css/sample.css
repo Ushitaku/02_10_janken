@@ -104,3 +104,7 @@ button:active{
 #cardstep-even{
     /* display: none; */
 }
+
+#cardstep-lose{
+    font-size: 45px;
+}

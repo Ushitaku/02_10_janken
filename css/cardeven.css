@@ -103,15 +103,63 @@ ul{
 }
 
 .card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
 
 }
 
 .card-wrapper img{
-    width: 30%;
+    padding-left: 280px;
+    width: 100%;
     height: auto;
+}
 
+/* カード1の設定 */
+.card1 {
+    width: 250px;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+.card1 a {
+    display: block;
+}
+.even1front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+/* 表面の表示 */
+.even1front {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+.even1back {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+ 
+/* 裏面の表示 */
+a:hover .card1 {
+    opacity: 0;
+    transform:rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+a:hover .even1back {
+    opacity: 1;
+    transform:rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
 }

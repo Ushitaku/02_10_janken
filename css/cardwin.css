@@ -93,34 +93,291 @@ button:active{
     color: white;
 }
 
-ul{
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-}
-.card-wrapper{
-    list-style: none;
-}
-
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-.card-wrapper img{
-    width: 70%;
+/* カード1の設定 */
+.card1 {
+    width: 50px;
     height: auto;
-
+    display: flex;
+    position: relative;
+}
+.card1 a {
+    display: block;
+}
+.win1front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+/* 表面の表示 */
+.win1front {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+.win1back {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+ 
+/* 裏面の表示 */
+a:hover .card1 {
+    opacity: 0;
+    transform:rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+a:hover .win1back {
+    opacity: 1;
+    transform:rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
 }
 
-.win1{
-    background-image: url(../img/back.png);
+/* カード2の設定 */
+.card2 {
+        padding-right: 10px;
+        display: flex;
+    position: relative;
+    width: 250px;
+
+}
+.card2 a {
+    display: block;
+}
+.win2front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+/* 表面の表示 */
+.win2front {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+.win2back {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+ 
+/* 裏面の表示 */
+a:hover .card2 {
+    opacity: 0;
+    transform:rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+a:hover .win2back {
+    opacity: 1;
+    transform:rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
 }
 
-.win1:hover{
-    background-image: url(../img/勝ち1.png);
+/* カード3の設定 */
+.card3 {
+        display: flex;
+    position: relative;
+    width: 250px;
 
+}
+.card3 a {
+    display: block;
+}
+.win3front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+/* 表面の表示 */
+.win3front {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+.win3back {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+ 
+/* 裏面の表示 */
+a:hover .card3 {
+    opacity: 0;
+    transform:rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+a:hover .win3back {
+    opacity: 1;
+    transform:rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+
+/* カード4の設定 */
+.card4 {
+        display: flex;
+    position: relative;
+    width: 250px;
+
+}
+.card4 a {
+    display: block;
+}
+.win4front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+/* 表面の表示 */
+.win4front {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+.win4back {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+ 
+/* 裏面の表示 */
+a:hover .card4 {
+    opacity: 0;
+    transform:rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+a:hover .win4back {
+    opacity: 1;
+    transform:rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+
+/* カード5設定 */
+.card5 {
+        display: flex;
+    position: relative;
+    width: 250px;
+
+}
+.card5 a {
+    display: block;
+}
+.win5front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+/* 表面の表示 */
+.win5front {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+.win5back {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+ 
+/* 裏面の表示 */
+a:hover .card5 {
+    opacity: 0;
+    transform:rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+a:hover .win5back {
+    opacity: 1;
+    transform:rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+
+/* カード6の設定 */
+.card6 {
+        display: flex;
+    position: relative;
+    width: 250px;
+
+}
+.card6 a {
+    display: block;
+}
+.win6front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+/* 表面の表示 */
+.win6front {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
+}
+.win6back {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+ 
+/* 裏面の表示 */
+a:hover .card6 {
+    opacity: 0;
+    transform:rotateY(90deg);
+    transition:
+        opacity 50ms 200ms,
+        transform 300ms;
+}
+a:hover .win6back {
+    opacity: 1;
+    transform:rotateY(0deg);
+    transition:
+        opacity 100ms 150ms,
+        transform 300ms 150ms;
 }
